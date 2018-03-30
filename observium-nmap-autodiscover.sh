@@ -37,7 +37,7 @@ echo "Attempting to add devices to Observium..."
 # /opt/observium/config.php
 for i in "${SNMP_HOSTS[@]}"
 do
-    cd $OBSERVIUM_INSTALL_DIR && $OBSERVIUM_INSTALL_DIR/add_device.php $i
+    cd $OBSERVIUM_INSTALL_DIR && $OBSERVIUM_INSTALL_DIR/add_device.php $i -p
 done
 
 
